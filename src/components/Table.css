@@ -1,0 +1,62 @@
+/* Table.css */
+
+/* Container for the table */
+.table {
+    width: 100%; /* Full width of the container */
+    border-collapse: collapse; /* Collapse borders for a cleaner look */
+    margin: 20px 0; /* Margin for spacing */
+    font-family: 'Arial', sans-serif; /* Font family for readability */
+  }
+  
+  /* Style for table elements */
+  .table table {
+    width: 100%; /* Full width of the container */
+    border: 1px solid #ddd; /* Light border around the table */
+  }
+  
+  .table th, .table td {
+    padding: 12px; /* Padding for cells */
+    text-align: left; /* Align text to the left */
+    border-bottom: 1px solid #ddd; /* Bottom border for rows */
+  }
+  
+  .table th {
+    background-color: #30a7ec; /* Background color for header */
+    color: white; /* Text color for header */
+  }
+  
+  
+  .table td, .table th {
+    font-size: 14px; /* Font size for table text */
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  }
+  /* Table.css */
+
+.table {
+  max-height: 300px; /* Set a maximum height for the table container */
+  overflow-y: auto; /* Enable vertical scrolling when content overflows */
+  overflow-x: auto; /* Enable horizontal scrolling for wide tables */
+  margin: 20px 0; /* Add margin for spacing */
+  border: 1px solid #ccc; /* Optional: Add a border around the table */
+  border-radius: 8px; /* Optional: Rounded corners */
+}
+
+.table table {
+  width: 100%; /* Ensure the table takes full width of its container */
+  border-collapse: collapse; /* Optional: Collapse borders */
+}
+
+.table th, .table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc; /* Add a bottom border to rows */
+}
+
+.table thead {
+  background-color: #f5f5f5; /* Optional: Add background color for table header */
+  position: sticky;
+  top: 0; /* Make the header sticky when scrolling */
+  z-index: 1;
+}

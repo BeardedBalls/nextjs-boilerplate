@@ -1,0 +1,117 @@
+/* Make sure the entire dashboard fits well on mobile devices */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f7f7; /* Soft background for better contrast */
+  border-radius: 20px;
+  color: #333; /* Darker text for better readability */
+  padding: 20px; /* Increased padding for a more spacious look */
+  width: 90vw; /* Use viewport width to make it responsive */
+  max-width: 500px; /* Max width for larger screens */
+  margin: 0 auto; /* Center the dashboard horizontally */
+  height: auto; /* Allow the height to adjust naturally */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Make text inside the dashboard scale better */
+header {
+  text-align: center;
+  font-size: 1rem; /* Scale font size for mobile */
+  font-weight: bold; /* Bold header for emphasis */
+}
+
+/* Sections for user and payment details */
+.user-section,
+.payment-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 1.5rem; /* Increased padding for comfort */
+  background-color: #fff;
+  border-radius: 15px; /* Rounded corners for a softer look */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+  transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.user-section:hover,
+.payment-section:hover {
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Ensure the button fits mobile view */
+#logout {
+  background-color: #e63946; /* Distinct color for logout */
+  color: white; /* White text for contrast */
+  border: none; /* No border */
+  border-radius: 12px;
+  padding: 12px 25px; /* Ensure better spacing */
+  margin: 1rem auto;
+  width: 100%; /* Full width on mobile */
+  max-width: 220px; /* Control max width */
+  font-size: 1rem; /* Ensure readability on small screens */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+#logout:hover {
+  background-color: #d62839; /* Darker red on hover */
+}
+
+/* Payment buttons and forms */
+.payment-toggle-btn,
+.payment-form button {
+  width: 100%; /* Full width for mobile */
+  max-width: 220px; /* Control max width */
+  padding: 12px; /* Increased padding */
+  border-radius: 5px; /* Consistent rounding */
+}
+
+.payment-form {
+  width: 100%; /* Ensure form fits in the container */
+  max-width: 400px; /* Restrict max width */
+}
+
+.payment-form label,
+.payment-form input {
+  font-size: 1rem; /* Consistent font size */
+}
+
+/* GCash button styling */
+.gcash-button {
+  background-color: #00BFFF; /* GCash color */
+  color: white; /* White text */
+  border: none; /* No border */
+  padding: 12px 25px; /* Increased padding */
+  border-radius: 5px;
+  cursor: pointer; /* Pointer cursor */
+  font-size: 16px;
+  transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.gcash-button:hover {
+  background-color: #0099CC; /* Darker shade on hover */
+}
+
+/* Add media query for smaller screens */
+@media screen and (max-width: 600px) {
+  .dashboard {
+    padding: 15px; /* Slightly reduced padding */
+    width: 95vw; /* Slightly reduce width on very small screens */
+  }
+
+  header {
+    font-size: 1.5rem; /* Slightly reduce font size */
+  }
+
+  #logout {
+    font-size: 0.9rem; /* Smaller text for buttons */
+    padding: 10px 20px; /* Adjusted padding for smaller screens */
+  }
+
+  /* Ensure buttons and inputs are easily tappable */
+  .payment-toggle-btn,
+  .payment-form button {
+    padding: 10px; /* Ensure comfortable tapping area */
+  }
+}

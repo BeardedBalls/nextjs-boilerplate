@@ -1,0 +1,106 @@
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure modal is on top */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+}
+
+/* Heading */
+.modal-content h3 {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Label */
+.modal-content label {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Select */
+.modal-content select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  transition: border-color 0.3s;
+}
+
+.modal-content select:hover {
+  border-color: #007bff; /* Change border color on hover */
+}
+
+/* Input */
+.modal-content input[type="number"] {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  transition: border-color 0.3s;
+}
+
+.modal-content input[type="number"]:focus {
+  border-color: #007bff; /* Change border color on focus */
+}
+
+/* Error Message */
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+.modal-content button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-bottom: 10px; /* Add some spacing between buttons */
+}
+
+.modal-content button:hover {
+  background-color: #0056b3; /* Darken button on hover */
+  transform: translateY(-2px); /* Raise button slightly on hover */
+}
+
+.modal-content button:active {
+  transform: translateY(0); /* Reset position on click */
+}
+
+/* Cancel Button Specific Styles */
+.modal-content button:last-child {
+  background-color: #dc3545; /* Red for cancel button */
+}
+
+.modal-content button:last-child:hover {
+  background-color: #c82333; /* Darken cancel button on hover */
+}

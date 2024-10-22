@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./BG.jpg');
+  background-size: 100% 100%;
+  max-width: 100vw; 
+  max-height: 100vh; 
+  width: auto; 
+  height: auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly less transparent for better visibility */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px; /* Set a max-width for better responsiveness */
+}
+
+.header {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+  font-size: 24px; /* Adjust font size as needed */
+  font-weight: bold; /* Optional: make the header text bold */
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.inputGroup {
+  display: flex;
+  gap: 10px;
+}
+
+.inputGroup .input {
+  flex: 1;
+}
+
+.inputContainer .input {
+  width: 95%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.button {
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  margin-bottom: 15px;
+  text-align: center;
+}

@@ -1,0 +1,50 @@
+.title{
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+/* Container for the entire dashboard layout */
+#Container {
+  display: grid;
+  grid-template-rows: 1fr 2fr; /* Upper half takes 1 fraction, lower half takes 2 fractions */
+  grid-template-columns: 1fr; /* Single column layout */
+  margin: 0; /* Remove margin */
+  width: 100%;
+}
+
+/* Upper half section */
+#User {
+  grid-row: 1 / 2; /* Occupies the first row */
+  background-color: #30a7ec; /* Background color */
+  padding: 20px; /* Padding around the content */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  display: flex; /* Use Flexbox for layout */
+  align-items: center; /* Center items vertically */
+  justify-content: space-evenly; /* Distribute space between items */
+  
+}
+
+/* Lower half section */
+#Content {
+  grid-row: 2 / 3; /* Occupies the second row */
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  
+}
+
+/* Individual sections inside the lower half */
+#Table, #Calendar {
+  display: flex; /* Use Flexbox inside each section */
+  padding: 20px; /* Padding around the content */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+/* Optional: Add background color for the Table and Calendar sections */
+#Table {
+  
+  background-color: #30a7ec; /* Light gray background color */
+}
+
+#Calendar {
+  background-color: #30a7ec; /* Lighter gray background color */
+}

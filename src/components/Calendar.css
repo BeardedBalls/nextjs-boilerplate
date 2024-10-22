@@ -1,0 +1,36 @@
+/* Calendar.css */
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 months per row */
+  gap: 5px;
+  padding: 20px;
+  justify-items: center; /* Center the month names */
+}
+
+.calendar-month {
+  width: 100px; /* Fixed width */
+  height: 100px; /* Fixed height */
+  display: flex; /* Flexbox to center content */
+  justify-content: center; /* Horizontally center the text */
+  align-items: center; /* Vertically center the text */
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 18px;
+  color: black;
+}
+
+.calendar-month:hover {
+  background-color: #007bff;
+  color: rgb(0, 0, 0);
+}
+
+.calendar-month.selected {
+  background-color: #007bff;
+  color: white;
+  border-color: #0056b3;
+}

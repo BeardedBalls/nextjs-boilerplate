@@ -1,0 +1,28 @@
+/* UserCount.css */
+.lala {
+    color: #333; /* Darker text color for contrast */
+    background-color: #ffffff; /* White background */
+    width: 120px; /* Adjust width as needed */
+    height: 120px; /* Adjust height as needed */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow for better depth */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    font-size: 16px; /* Base font size */
+    font-family: 'Arial', sans-serif; /* Simple, readable font */
+  }
+  
+  .label {
+    color: #30a7ec; /* Main color for the label text */
+    font-weight: bold; /* Make the label text stand out */
+    margin-bottom: 8px; /* Space between label and count */
+  }
+  
+  .collection {
+    color: #333; /* Color for the number text */
+    font-size: 24px; /* Larger font size for the number */
+    font-weight: bold; /* Make the number bold */
+  }
+  
